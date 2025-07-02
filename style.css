@@ -1,0 +1,90 @@
+@font-face {
+    font-family: spartan;
+    src: url(fonts/League_Spartan.ttf);
+}
+body{
+    font-family: spartan, Arial, Helvetica, sans-serif;
+    background-color: rgb(208, 191, 120);
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weatherForm{
+    margin:20px;
+}
+.cityInput{
+    padding:10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border:2px solid rgba(0, 0, 0, 0.575);
+    border-radius: 15px;
+    margin: 10px;
+    width:300px;
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    font-family: spartan, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: rgb(180, 167, 50);
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+button[type="submit"]:hover{
+    color:white;
+    background-color: rgb(160, 150, 55);
+}
+.card{
+    background: linear-gradient(180deg, rgb(140, 140, 213),rgb(193, 166, 118));
+    padding:75px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.589);
+    min-width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.726);
+    margin-bottom: 30px;
+}
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.descDisplay{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.weatherEmoji{
+    margin:0;
+    font-size: 8rem;
+}
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.612);
+}
+.credits{
+    font-family: spartan, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+    float:left;
+}
